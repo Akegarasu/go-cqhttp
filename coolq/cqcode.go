@@ -1103,7 +1103,7 @@ func (bot *CQBot) makeImageOrVideoElem(d map[string]string, video, group bool) (
 }
 
 // makeShowPic 一种xml 方式发送的群消息图片
-func (bot *CQBot) makeShowPic(elem message.IMessageElement, source string, brief string,icon string, minWidth int64, minHeight int64, maxWidth int64, maxHeight int64, group bool) ([]message.IMessageElement, error) {
+func (bot *CQBot) makeShowPic(elem message.IMessageElement, source string, brief string, icon string, minWidth int64, minHeight int64, maxWidth int64, maxHeight int64, group bool) ([]message.IMessageElement, error) {
 	xml := ""
 	var suf message.IMessageElement
 	if brief == "" {
